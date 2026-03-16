@@ -8,6 +8,7 @@ colsums = function(data) {
   
   names(sums) = colnames(data)
   
+  print("Ist das nicht viel besser als mit Großbuchstaben?")
   return(sums)
 }
 
