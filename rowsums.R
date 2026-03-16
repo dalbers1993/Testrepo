@@ -1,10 +1,6 @@
 rowsums = function(data) {
   
-  sums = rep(NA, NCOL(data))
+  sums = lapply(data, sum, na.rm = TRUE)
   
-  for (i in 1:NROW(data)) {
-    sums[i] = sum(data[i, ], na.rm = TRUE)
-  }
-  
-  return(sums)
+  return(unlist(sums))
 }
