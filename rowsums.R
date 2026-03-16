@@ -6,5 +6,6 @@ rowsums = function(data) {
     sums[i] = sum(data[i, ], na.rm = TRUE)
   }
   
+  print("Ist das nicht viel besser als mit Großbuchstaben?")
   return(sums)
 }
